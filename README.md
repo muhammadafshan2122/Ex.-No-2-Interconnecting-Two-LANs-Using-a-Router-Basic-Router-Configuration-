@@ -22,17 +22,14 @@ ________________________________________
 
 ________________________________________
 # IP Addressing Table:
-<br>
 | Device  | Interface       | IP Address    | Subnet Mask     |
 |---------|-----------------|---------------|-----------------|
 | PC0     | NIC             | 192.168.1.10  | 255.255.255.0   |
 | PC1     | NIC             | 192.168.2.10  | 255.255.255.0   |
 | Router0 | FastEthernet0/0 | 192.168.1.1   | 255.255.255.0   |
 | Router0 | FastEthernet0/1 | 192.168.2.1   | 255.255.255.0   |
-<br>
 ________________________________________
 # Procedure:
-<br>
 1.	Open Cisco Packet Tracer and add 2 PCs, 2 Switches, and 1 Router.
 2.	Connect each PC to a switch, and each switch to the router using straight-through cables.
 3.	Assign IP addresses to both PCs according to the IP table.
@@ -43,7 +40,7 @@ o	FastEthernet0/1 → 192.168.2.1
 6.	Set each PC’s default gateway:<br>
 o	PC0 → 192.168.1.1<br>
 o	PC1 → 192.168.2.1<br>
-7.	Test connectivity using ping from PC0 to PC1.<br>
+7.	Test connectivity using ping from PC0 to PC1.
 ________________________________________
 # Commands Used (Router CLI):
 bash<br>
