@@ -1,31 +1,38 @@
-# Date :
-## Ex.-No-2-Interconnecting-Two-LANs-Using-a-Router-Basic-Router-Configuration
+# Ex.-No-2-Interconnecting-Two-LANs-Using-a-Router-Basic-Router-Configuration
+
+## Date : 22-10-2026
 
 
-# Objective
+# Objective:
 To configure a router to connect two separate LANs and enable communication between them using static IP addressing.
 ________________________________________
-# Apparatus/Tools Required
+# Apparatus/Tools Required:
 •	Cisco Packet Tracer<br>
 •	2 PCs<br>
 •	2 Switches<br>
 •	1 Router (e.g., 1841 or 2911)<br>
 •	Straight-through cables<br>
 ________________________________________
-# Network Topology Diagram
+# Network Topology Diagram:
  Description:<br>
 •	PC0 → Switch0 → Router (FastEthernet0/0)<br>
 •	PC1 → Switch1 → Router (FastEthernet0/1)<br>
-(Insert screenshot of your Packet Tracer setup here)<br>
+
+<img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/cd931e31-c6c0-4ab2-bb86-ff6c6574185f" />
+
 ________________________________________
-# IP Addressing Table
-Device	Interface	IP Address	Subnet Mask<br>
-PC0	NIC	192.168.1.10	255.255.255.0<br>
-PC1	NIC	192.168.2.10	255.255.255.0<br>
-Router0	FastEthernet0/0	192.168.1.1	255.255.255.0<br>
-Router0	FastEthernet0/1	192.168.2.1	255.255.255.0<br>
+# IP Addressing Table:
+<br>
+| Device  | Interface       | IP Address    | Subnet Mask     |
+|---------|-----------------|---------------|-----------------|
+| PC0     | NIC             | 192.168.1.10  | 255.255.255.0   |
+| PC1     | NIC             | 192.168.2.10  | 255.255.255.0   |
+| Router0 | FastEthernet0/0 | 192.168.1.1   | 255.255.255.0   |
+| Router0 | FastEthernet0/1 | 192.168.2.1   | 255.255.255.0   |
+<br>
 ________________________________________
-# Procedure
+# Procedure:
+<br>
 1.	Open Cisco Packet Tracer and add 2 PCs, 2 Switches, and 1 Router.
 2.	Connect each PC to a switch, and each switch to the router using straight-through cables.
 3.	Assign IP addresses to both PCs according to the IP table.
@@ -38,7 +45,7 @@ o	PC0 → 192.168.1.1<br>
 o	PC1 → 192.168.2.1<br>
 7.	Test connectivity using ping from PC0 to PC1.<br>
 ________________________________________
-# Commands Used (Router CLI)
+# Commands Used (Router CLI):
 bash<br>
 CopyEdit<br>
 Router> enable<br>
@@ -51,11 +58,15 @@ Router(config)# interface fastethernet0/1<br>
 Router(config-if)# ip address 192.168.2.1 255.255.255.0<br>
 Router(config-if)# no shutdown<br>
 ________________________________________
-# Output (Screenshots)
-•	Router CLI configuration<br>
-•	IP configurations on PCs<br>
-•	Successful ping between PC0 and PC1<br>
+# Output (Screenshots):
+
+<img width="1917" height="1016" alt="image" src="https://github.com/user-attachments/assets/24008a19-85a6-4976-b2f7-2c635de1d981" />
+<br>
+<img width="1917" height="1018" alt="image" src="https://github.com/user-attachments/assets/790a8de1-d964-4698-943a-ce7a2b4c28b5" />
+<br>
+<img width="1917" height="1020" alt="image" src="https://github.com/user-attachments/assets/e3a58374-da58-43a7-ab12-8cffb6fa6502" />
+
 ________________________________________
-# Result
+# Result:
 Successfully configured a router to connect two LANs. Communication between PC0 and PC1 across different networks was tested and verified.
 
